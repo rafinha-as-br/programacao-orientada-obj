@@ -1,0 +1,28 @@
+Classes da nota fiscal:
+- Nota fiscal   
+  - Tipo (pendência ou normal) (enum)
+- Venda
+  - Data Hora (date)
+  - Pagamento (p)
+- Item Venda 
+  - Produto (p)
+  - qtd (f,d)
+- Produto
+  - Código (int)
+  - Descrição (s)
+  - Valor unitário (d,f)
+- Endereço
+  - Logradouro (s)
+  - Bairro(s)
+  - Cidade(s)
+  - Estado(s)
+  - Numero(S)
+- Empresa
+  - Endereço ()
+  - Nome fantasia (s)
+  - Razão social (s)
+  - Telefone(s)
+  - CNPJ(s)
+- Pagamento
+  - Tipo (enum)
+  - Valor (f,d)
