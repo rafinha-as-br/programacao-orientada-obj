@@ -1,0 +1,26 @@
+Classes da nota fiscal:
+- Nota fiscal   
+  - Tipo (pendência ou normal)
+- Venda
+  - Data Hora
+  - Pagamento
+- Item Venda
+- Produto
+  - Código
+  - Descrição
+  - Valor unitário
+- Endereço
+  - Logradouro
+  - Bairro
+  - Cidade
+  - Estado
+  - Numero
+- Empresa
+  - Endereço
+  - Nome fantasia
+  - Razão social
+  - Telefone
+  - CNPJ
+- Pagamento
+  - Tipo
+  - Valor
