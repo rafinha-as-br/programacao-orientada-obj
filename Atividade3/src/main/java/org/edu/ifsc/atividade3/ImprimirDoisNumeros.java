@@ -1,9 +1,8 @@
-package org.example;
-import java.util.List;
+package org.edu.ifsc.atividade3;
 import  java.util.Scanner;
 
 
-public class DoisNumeros {
+public class ImprimirDoisNumeros {
     Scanner scanner = new Scanner(System.in);
     private double numero1;
     private double numero2;
@@ -18,9 +17,13 @@ public class DoisNumeros {
         setNumero2(numeroinformado);
     }
 
-    //printar os números
+    //imprimir os números
     void printarNumeros(){
-        System.out.println();
+        double num1 = getNumero1();
+        double num2 = getNumero2();
+
+        System.out.printf("%.2f%n", num1);
+        System.out.printf("%.2f%n", num2);
     }
 
     public void setNumero1(double numero1) {
@@ -28,6 +31,14 @@ public class DoisNumeros {
     }
     public void setNumero2(double numero2) {
         this.numero2 = numero2;
+    }
+
+    public double getNumero1() {
+        return numero1;
+    }
+
+    public double getNumero2() {
+        return numero2;
     }
 }
 
