@@ -2,7 +2,6 @@ Arquivo imprimir protocolo => recebe um protocolo da main e trata todas as infor
 
 - classe protocolo guarda tudo as informações do paciente 
   - (requer classe Exame e Usuario para pegar dados pessoais)
-  - Passar todas as informações para a classe protocolo
 
 
 protocolo contém:
@@ -16,9 +15,9 @@ protocolo contém:
   - Nome do paciente
   - Sexo
   - Idade 
-  - Matrícula (vem junto com o usuário??)
-  - Prontuário (vem daonde?)
-  - Idade em (oq faço aqui?)
+  - Matrícula 
+  - Prontuário 
+  - Idade em 
   - responsável (tenho que criar uma classe médico?)
   - solicitante (é um médico? novamente, preciso criar uma classe de médico?)
   
@@ -26,12 +25,15 @@ protocolo contém:
 - Rodapé (usuário vai ser o nome do usuário + dia do nascimento / e senha será a data de aniversário sem barras)
 
 Classes:
-- Classe Estabelecimento
+- Classe Estabelecimento OK 
   - Endereço
   - cidade
   - estado
   - cep
   - Telefone
+
+- Classe médico OK 
+  - Nome
 
 - Classe Usuário OK 
   - Nome 
@@ -42,11 +44,11 @@ Classes:
   - Exames feitos
   - Prontuario
 
-- Classe exame 
+- Classe exame  OK 
   - String codigo exame
   - String descrição
   - Data do exame
-  - Data de resultado
+  - Data de resultado (método feito)
 
 - Classe Protocolo
   - Instância de estabelecimento

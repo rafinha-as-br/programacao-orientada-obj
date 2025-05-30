@@ -2,16 +2,23 @@ package org.example;
 
 public class Protocolo {
 
-    //usuário com informações do paciente
+    //informações do usuário, estabelecimento e médico
+    Usuario usuario;
+    Estabelecimento estabelecimento;
+    Medico medico;
 
+    public Estabelecimento getEstabelecimento() {
+        return estabelecimento;
+    }
 
+    public Usuario getUsuario() {
+        return usuario;
+    }
 
-    // cabeçalho
-
-        //informações do estabelecimento
-        // info e data do sistema
-
-    //dados do protocolo
-
-
+    public Protocolo(Usuario usuario, Estabelecimento estabelecimento, Medico medico) {
+        this.usuario = usuario;
+        this.estabelecimento = estabelecimento;
+        this.medico = medico;
+    }
 }
+
