@@ -1,4 +1,5 @@
 package org.example;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,11 +18,13 @@ public class Main {
         try {
 
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            Date dataAgora = new Date();
             // instancia estabelecimento
             Estabelecimento estabelecimento = new Estabelecimento(
                     "Hospital Universitário de Gaspar",
                     "Rua das Flores",
                     "123",
+                    "Gaspar",
                     "SP",
                     "01234-567",
                     "(11) 99999-0000",
@@ -60,9 +63,14 @@ public class Main {
 
             Protocolo protocoloTeste = new Protocolo(usuario, estabelecimento, medico);
 
+            //imprimindo tudo
+            System.out.println("IMAGEM IMAGEM" + StringUtils.leftPad(protocoloTeste.estabelecimento.nome.toUpperCase(), 38) + StringUtils.leftPad("Sistema de apoio", 33));
+            System.out.println("IMAGEM IMAGEM" + StringUtils.leftPad(protocoloTeste.estabelecimento.rua, 20) + ", " + protocoloTeste.estabelecimento.numero + " - " + protocoloTeste.estabelecimento.cidade + StringUtils.leftPad ("Protocolo de coleta", 40));
+            System.out.println("IMAGEM IMAGEM" + StringUtils.leftPad(protocoloTeste.estabelecimento.estado, 8) + " - CEP: " + protocoloTeste.estabelecimento.cep + " - " + protocoloTeste.estabelecimento.telefone + StringUtils.leftPad(dataAgora.toString(), 46));
+            System.out.println(StringUtils.center("", 110, "-"));
+            System.out.println(StringUtils.center("Protocolo de coleta", 110, ""));
+            System.out.println(StringUtils.center("", 110, "-"));
 
-            //função de imprimir TESE
-            System.out.println("IMAGEM IMAGEM " + StringUtils.left(protocoloTeste.estabelecimento.nome.toUpperCase(), 80) + StringUtils.rightPad("Sistema de apoio", 80));
 
 
 
